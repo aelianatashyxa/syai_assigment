@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SyaiVerse - Personal Portfolio">
+    <title>SyaiVerse | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- ACCESSIBILITY: SKIP LINK -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>  
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">SyaiVerse<span>.</span></a>
+
+            <button id="menu-toggle" class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-btn"
+                aria-label="Switch colour theme">☀</button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow">✦ WELCOME TO MY WORLD</p>
+                <h1>Hai, I'm</h1><h2><span>SYAIDATUUL AELIA NATASHYXA BINTI MOHAMAD ABDUL NASAR.</span></h2>
+                <h2><span id="typing-text">Computer Science Student</span><span class="cursor">|</span></h2>
+                <p class="hero-description">
+                    Welcome to SyaiVerse, where creativity,
+                    technology and elegance come together.
+                    Explore my journey, skills and projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore Projects ↗</a>
+                    <a href="#contact" class="btn btn-outline">Contact Syai</a>
+                </div>
+            </div>
+
+            
+            <div class="hero-art">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="hero-orb">
+                    <img
+                        src="profile.jpeg"
+                        alt="Portrait of Syai"
+                        class="profile-photo"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>SYAI</span></h2>
+            </div>
+
+            <div class="about-grid"> 
+                <div class="glass-card about-photo-card reveal">
+                    <img
+                        src="me.jpg"
+                        alt="Photo of Syai"
+                        class="about-photo"
+                    >
+                </div>
+
+                <div class="about-content reveal">
+                    <h3>A Little About Myself</h3>
+                    <p>
+                        Hello! I'm Syai, a Computer Science student
+                        specialising in Network Computing.
+                        I enjoy exploring programming, technology,
+                        and creative digital solutions.
+                    </p>
+                    <p>
+                        My goal is to continue improving my technical
+                        knowledge and developing meaningful projects
+                        that solve real-world problems.
+                    </p>
+
+                    <div class="about-info">
+                        <p><strong>Location:</strong> Sarikei, Sarawak</p>
+                        <p><strong>Education:</strong> Bachelor of Computer Science</p>
+                        <p><strong>Specialisation:</strong> Network Computing</p>
+                        <p><strong>Interests:</strong> Coding, Technology, Design, Sport</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section alternate">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHAT I KNOW</p>
+                <h2>SYAI <span>Skills</span></h2>
+                <p>Technologies and tools I have explored.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="glass-card skill-card reveal">
+                    <div class="skill-icon">⌘</div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <div class="skill-icon">⌨</div>
+                    <h3>Programming</h3>
+                    <p>Java, Python, C++</p>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <div class="skill-icon">▤</div>
+                    <h3>Database</h3>
+                    <p>SQL, MySQL, SQLite</p>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <div class="skill-icon">◎</div>
+                    <h3>Networking</h3>
+                    <p>Network Design, TCP/IP, Network Fundamentals</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY CREATIONS</p>
+                <h2>SYAI <span>Projects</span></h2>
+                <p>A collection of my academic and personal work.</p>
+            </div>
+
+            <div class="project-tools reveal">
+                <input type="search" id="project-search"
+                    placeholder="Search projects..."
+                    aria-label="Search projects">
+
+                <div class="filter-buttons" aria-label="Project filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="database">Database</button>
+                    <button class="filter-btn" data-filter="networking">Networking</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="glass-card project-card reveal" data-category="programming">
+                    <div class="project-image">☀</div>
+                    <div class="project-content">
+                        <span class="project-tag">JAVA</span>
+                        <h3>Climate Learning & Quiz App</h3>
+                        <p>
+                            An educational Java application featuring
+                            interactive lessons, quizzes and score tracking.
+                        </p>
+                        <button class="details-btn" data-project="climate">View Details ↗</button>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="programming">
+                    <div class="project-image">♧</div>
+                    <div class="project-content">
+                        <span class="project-tag">PYTHON · SQLITE</span>
+                        <h3>Fitness Club Management</h3>
+                        <p>
+                            A command-line system for managing fitness
+                            club members, classes, payments and reports.
+                        </p>
+                        <button class="details-btn" data-project="fitness">View Details ↗</button>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="database">
+                    <div class="project-image">▤</div>
+                    <div class="project-content">
+                        <span class="project-tag">SQL · DATABASE</span>
+                        <h3>Online Auction Database</h3>
+                        <p>
+                            A relational database for managing users,
+                            products, bids, orders and payments.
+                        </p>
+                        <button class="details-btn" data-project="auction">View Details ↗</button>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="networking">
+                    <div class="project-image">◎</div>
+                    <div class="project-content">
+                        <span class="project-tag">NETWORKING</span>
+                        <h3>Office Network Design</h3>
+                        <p>
+                            A network infrastructure proposal involving
+                            wired and wireless connectivity for offices.
+                        </p>
+                        <button class="details-btn" data-project="network">View Details ↗</button>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="web">
+                    <div class="project-image">⌘</div>
+                    <div class="project-content">
+                        <span class="project-tag">HTML · CSS · JS</span>
+                        <h3>Personal Homepage</h3>
+                        <p>
+                            A personal website introducing my background,
+                            education, interests and technical journey.
+                        </p>
+                        <button class="details-btn" data-project="homepage">View Details ↗</button>
+                    </div>
+                </article>
+            </div>
+
+            <p id="no-results" hidden>No matching projects found.</p>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="section alternate">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY JOURNEY</p>
+                <h2>Education & <span>Experience</span></h2>
+            </div>
+
+            <div class="timeline">
+                <article class="glass-card timeline-item reveal">
+                    <span class="project-tag">EDUCATION</span>
+                    <h3>Bachelor of Computer Science (Network Computing) with Honours</h3>
+                    <p>Universiti Malaysia Sarawak (UNIMAS)</p>
+                    <p>Studying programming, networking, databases and computer systems.</p>
+                </article>
+
+                <article class="glass-card timeline-item reveal">
+                    <span class="project-tag">EDUCATION</span>
+                    <h3>Sijil Tinggi Persekolahan Malaysia (STPM)</h3>
+                    <p>Pre-university qualification.</p>
+                </article>
+
+                <article class="glass-card timeline-item reveal">
+                    <span class="project-tag">PROJECT EXPERIENCE</span>
+                    <h3>Academic Group Projects</h3>
+                    <p>
+                        Participated in software development, database
+                        design and networking-related coursework.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact <span>Syai</span></h2>
+                <p>Have a question or want to connect? Send me a message.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-intro reveal">
+                    <h3>Let's Create Something Amazing ✦</h3>
+                    <p>
+                        I'm always interested in learning,
+                        collaborating and exploring new opportunities.
+                    </p>
+                    <a href="mailto:aelianatashyxa@gmail.com" class="contact-email">
+                        aelianatashyxa@gmail.com
+                    </a>
+                </div>
+
+                <form id="contact-form" class="glass-card contact-form reveal" novalidate>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message ↗</button>
+                    <p id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROJECT DETAILS DIALOG -->
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+            <button id="close-dialog" class="close-dialog"
+                aria-label="Close project details">×</button>
+            <p class="eyebrow">PROJECT DETAILS</p>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+        </div>
+    </dialog>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <footer class="footer">
+        <a href="#home" class="logo">SyaiVerse<span>.</span></a>
+        <p>Designed with ♡ by Syai</p>
+        <p>© <span id="year"></span> Syaelixora. All rights reserved.</p>
+    </footer>
+</body>
+</html>
